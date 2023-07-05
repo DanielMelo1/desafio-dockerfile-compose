@@ -1,0 +1,177 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: georgia;
+}
+
+body {
+    background: linear-gradient(to right bottom,#6d327c,#485DA6,#00a1ba,#01b18e,#32b37b);   
+}
+
+ul {                                                            
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    color: rgb(41, 32, 32);
+    transition: 0.4s;
+}
+
+a:hover {
+    color: #249a5b;
+}
+
+
+
+/* Navbar */
+#navbar {
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+/* conteúdo principal */
+.container {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#posts-container {
+    flex: 3 1 0;
+}
+
+.post {
+    margin-bottom: 2.5rem;
+}
+
+.post img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+
+.title,
+.description,
+.author {
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.author {
+    color: #333;
+    font-weight: bold;
+}
+
+/* barra lateral */
+#sidebar {
+    flex: 1 1 0;
+}
+
+#search-bar,
+#categories,
+#tags {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+}
+
+#search-bar form {
+    display: flex;
+}
+
+#search-bar input {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+#search-bar input[type="submit"] {
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+    transition: 0.4s;
+}
+
+#search-bar input[type="submit"]:hover {
+    background-color: #91c2f0;
+}
+
+#categories li {
+    margin-bottom: 1rem;
+}
+
+#tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem
+}
+
+#tags-container a {
+    background-color: #ddd;
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+}
+
+/* contato */
+#contact {
+    border-top: 2px solid #ddd;
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact h2,
+#contact p {
+    margin-bottom: 1rem;
+}
+
+/* rodapé */
+#footer {
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+}
+
+#footer h2,
+#footer p {
+    margin-bottom: 1rem;
+}
+
+/* responsivo */
+@media (max-width: 450px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    #nav-links {
+        display: none;
+    }
+}
